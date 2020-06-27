@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """Base class module
-defines all common attributes/methods for other classes
+   defines all common attributes/methods for other classes
 """
 import uuid
 from datetime import datetime
@@ -10,7 +10,7 @@ class BaseModel:
     """Base Model class"""
 
     def __init__(self):
-        """Initialization 
+        """Initialization
         """
         self.id = str(uuid.uuid4())
         self.created_at = datetime.now()
@@ -21,16 +21,18 @@ class BaseModel:
         Returns:
             [str]: human readable representation of an instance
         """
-        return "[{}] ({}) {}".format(type(self).__name__, self.id, self.__dict__)
+        return "[{}] ({}) {}"\
+            .format(type(self).__name__, self.id, self.__dict__)
 
     def save(self):
-        """Updates the public instance attribute updated_at with the current datetime
+        """Updates the public instance attribute
+           updated_at with the current datetime
         """
         self.updated_at = datetime.now()
 
     def to_dict(self):
         """to dict module
-        
+
         Returns:
             [dict]: dictionary representation of an instance
         """

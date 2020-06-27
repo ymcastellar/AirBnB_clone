@@ -18,7 +18,6 @@ class BaseModel:
 
     def __str__(self):
         """__str__ module
-
         Returns:
             [str]: human readable representation of an instance
         """
@@ -31,11 +30,11 @@ class BaseModel:
 
     def to_dict(self):
         """to dict module
-
+        
         Returns:
             [dict]: dictionary representation of an instance
         """
-        my_dict = self.__dict__.copy
+        my_dict = self.__dict__.copy()
         my_dict["__class__"] = type(self).__name__
         my_dict["created_at"] = my_dict["created_at"].isoformat()
         my_dict["updated_at"] = my_dict["updated_at"].isoformat()

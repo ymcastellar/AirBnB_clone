@@ -4,6 +4,7 @@
 """
 import uuid
 from datetime import datetime
+from models import storage
 
 
 class BaseModel:
@@ -12,22 +13,24 @@ class BaseModel:
     def __init__(self, *args, **kwargs):
         """Initialization Base instance
         """
-        self.created_at = datetime.now()
-        self.updated_at = datetime.now()
-        self.id = str(uuid.uuid4())
 
         if kwargs is not None and kwargs != {}:
             for key, value in kwargs.items():
                 if key != "__class__":
                     setattr(self, key, value)
-                if hasattr(self, "created_at")
-                and type(self.created_at) == str:
+                if hasattr(self, "created_at")\
+                        and type(self.created_at) == str:
                     self.created_at = datetime.strptime(
                         value, "%Y-%m-%dT%H:%M:%S.%f")
-                if hasattr(self, "updated_at")
-                and type(self.updated_at) == str:
+                if hasattr(self, "updated_at")\
+                        and type(self.updated_at) == str:
                     self.updated_at = datetime.strptime(
                         value, "%Y-%m-%dT%H:%M:%S.%f")
+        else:
+            self.created_at = datetime.now()
+            self.updated_at = datetime.now()
+            self.id = str(uuid.uuid4())
+            storage.new(self)
 
     def __str__(self):
         """__str__ module
@@ -42,6 +45,7 @@ class BaseModel:
            updated_at with the current datetime
         """
         self.updated_at = datetime.now()
+        storage.save()
 
     def to_dict(self):
         """to dict module

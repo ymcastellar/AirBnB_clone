@@ -48,7 +48,13 @@ class FileStorage:
     def classes(self):
         """Return a dictionary of classes and references
         """
+        from models.amenity import Amenity
         from models.base_model import BaseModel
+        from models.city import City
+        from models.place import Place
+        from models.review import Review
+        from models.state import State
+        from models.user import User
 
         classes = {"BaseModel": BaseModel,
                    "User": User,
@@ -59,7 +65,7 @@ class FileStorage:
                    "Review": Review}
         return classes
 
-    def attributes(self):
+    '''def attributes(self):
         """Return valid attributes and their types
         """
         attributes = {
@@ -68,4 +74,4 @@ class FileStorage:
                  "created_at": datetime.datetime,
                  "updated_at": datetime.datetime}
         }
-        return attributes
+        return attributes'''

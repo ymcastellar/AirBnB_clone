@@ -92,34 +92,40 @@ class HBNBCommand(cmd.Cmd):
                 for k, obj in storage.all().items():
                     if type(obj).__name__ == w[0]:
                         lis.append(str(obj))
-                        print(lis)
+                print(lis)
         else:
             for k, obj in storage.all().items():
                 lis.append(str(obj))
-                print(lis)
+            print(lis)
 
-    def update(self, line):
+    def do_update(self, line):
         """ Prints all string representation
             of all instances based or not on the class name.
         """
-        if len(line) == 0:
+        if not line:
             print("** class name missing **")
-            return False
-        if line[0] not in HBNBCommand.__classes:
+            return
+
+        w = line.split(' ')
+        if w[0] not in storage.classes():
             print("** class doesn't exist **")
-            return False
-        if len(line) == 1:
+        elif len(w) == 1:
             print("** instance id missing **")
-            return False
-        if len(line) == 2:
-            print("** attribute name missing **")
-            return False
-        if len(line) == 3:
-            try:
-                type(eval(line[2])) != dict
-            except NameError:
-                print("** value missing **")
-                return False
+        else:
+            obj = storage.all()
+            for key, value in obj.items():
+                ob_name = value.__class__.__name__
+                ob_id = value.id
+                if ob_name == w[0] and ob_id == w[1].strip('"'):
+                    if len(w) == 2:
+                        print("** attribute name missing **")
+                    elif len(w) == 3:
+                        print("** value missing **")
+                    else:
+                        setattr(value, w[2], w[3].strip('"'))
+                        storage.save()
+                    return
+            print("** no instance found **")
 
 
 if __name__ == '__main__':

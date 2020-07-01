@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """module for Place class"""
 from models.base_model import BaseModel
 

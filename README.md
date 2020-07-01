@@ -1,6 +1,6 @@
 # AirBnB_clone
 
-![enter image description here](https://holbertonintranet.s3.amazonaws.com/uploads/medias/2018/6/65f4a1dd9c51265f49d0.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUWMNL5ANN/20200701/us-east-1/s3/aws4_request&X-Amz-Date=20200701T162034Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=bbc003fb50ff66611161be068015f682ff61c7c3896dbf800650f8aaf516e43d)
+![hbnb](https://holbertonintranet.s3.amazonaws.com/uploads/medias/2018/6/65f4a1dd9c51265f49d0.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUWMNL5ANN%2F20200701%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200701T162034Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=bbc003fb50ff66611161be068015f682ff61c7c3896dbf800650f8aaf516e43d)
 
 ## Table of Contents
 

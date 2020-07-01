@@ -24,10 +24,10 @@ class HBNBCommand(cmd.Cmd):
         """
         return True
 
-    def do_empyline(self, line):
+    def emptyline(self):
         """Overwrite new line method
         """
-        return False
+        pass
 
     def do_create(self, line):
         """Creates a new instance of BaseModel,

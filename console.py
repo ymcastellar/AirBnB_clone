@@ -5,6 +5,7 @@ Returns:
     interactive cmd with prompt = "(hbnb)"
 """
 import cmd
+import shlex
 from models import storage
 from models.base_model import BaseModel
 
@@ -106,7 +107,7 @@ class HBNBCommand(cmd.Cmd):
             print("** class name missing **")
             return
 
-        w = line.split(' ')
+        w = shlex.split(line)
         if w[0] not in storage.classes():
             print("** class doesn't exist **")
         elif len(w) == 1:

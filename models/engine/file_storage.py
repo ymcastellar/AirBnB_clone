@@ -64,14 +64,3 @@ class FileStorage:
                    "Place": Place,
                    "Review": Review}
         return classes
-
-    '''def attributes(self):
-        """Return valid attributes and their types
-        """
-        attributes = {
-            "BaseModel":
-                {"id": str,
-                 "created_at": datetime.datetime,
-                 "updated_at": datetime.datetime}
-        }
-        return attributes'''

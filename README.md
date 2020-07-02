@@ -1,6 +1,6 @@
 # AirBnB_clone
 
-![hbnb](https://photos.app.goo.gl/WFXeCnaH59grdHA3Ahttps://photos.app.goo.gl/WFXeCnaH59grdHA3A)
+![hbnb](https://i.imgur.com/44u0pXG.png)
 
 ## Table of Contents
 

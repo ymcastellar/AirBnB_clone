@@ -61,10 +61,11 @@
 * [`__init__.py`](/models/__init__.py) - initialization code for Python package models
 * [tests](/tests/) - unit test files
 
-## Execution
-
 ### Unit Testing
 ```python3 -m unittest discover tests```
+
+## Execution
+1. git clone https://github.com/Ang3l1t0/AirBnB_clone.git 
 ## Usage Examples
 ### Interactive Mode
 

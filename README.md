@@ -106,5 +106,5 @@ EOF  help  quit
 $
 ```
 ## Authors
-* Angel Palma | [GitHub]([https://github.com/Ang3l1t0](https://github.com/Ang3l1t0)) | [Twitter](https://twitter.com/Ang3lp)
+* Angel Palma | [GitHub](https://github.com/Ang3l1t0)) | [Twitter](https://twitter.com/Ang3lp)
 * Yoyman Castellar | [GitHub](https://github.com/ymcastellar) | [Twitter](https://twitter.com/CastellarYoyman)

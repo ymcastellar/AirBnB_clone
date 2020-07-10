@@ -21,6 +21,9 @@ head {
     width: 100%;
     border: 1px #DDDDDD solid;
     border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 button {
@@ -31,9 +34,8 @@ button {
     width: 20%;
     border: 0;
     border-radius: 4px;
-    float: right;
     margin-right: 30px;
-    margin-top: 10px;
+    
 }
 
 button:hover {

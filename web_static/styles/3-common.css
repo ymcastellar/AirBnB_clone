@@ -4,5 +4,8 @@ body {
     color: #484848;
     font-size: 14px;
     font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    background: url("../images/logo.png") no-repeat center;
+}
+
+head {
+    background: url("../images/icon.png") no-repeat center;
 }

@@ -9,3 +9,10 @@ body {
 head {
     background: url("../images/icon.png") no-repeat center;
 }
+
+.container .filters {
+    max-width: 1000px;
+    margin-top: 30px;
+    bottom: 30px;
+    align-items: center;
+}
